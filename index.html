@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jesús Castro Trainer - Entrenador Personal Online</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="nav-container">
-
                 <div class="logo">
                     <h1>Jesús Castro Trainer</h1>
-                    <img src="https://res.cloudinary.com/dq7uyauun/image/upload/v1717439642/JC-Logo.png" alt="Logo JC" class="logo-mark">
-                </div>
-
-                <div class="nav-logo">
-                    <img src="https://res.cloudinary.com/dq7uyauun/image/upload/v1717439642/JC-Logo.png" alt="Logo JC">
+                    <img src="https://res.cloudinary.com/dq7uyauun/image/upload/v1717439642/JC-Logo.png" alt="Logo JC" class="logo-mark" />
                 </div>
 
                 <ul class="nav-menu" id="navMenu">
@@ -36,14 +31,13 @@
                 <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
                     <span></span><span></span><span></span>
                 </button>
-
             </div>
         </nav>
     </header>
 
-    <!-- Hero Video -->
+    <!-- Hero -->
     <section id="inicio" class="video-section hero-video">
-        <div class="container">
+        <div class="container hero-container">
             <div class="video-hero-content">
                 <h1 class="hero-title">Transforma tu Cuerpo y tu Vida</h1>
                 <p class="hero-subtitle">Entrenamiento personalizado online adaptado a tus objetivos</p>
@@ -58,7 +52,6 @@
             <div class="video-cta">
                 <a href="#contacto" class="btn-primary">Comienza Ahora</a>
                 <a href="https://drive.google.com/file/d/1bqAqrsIvmgSFKbLV0C7ow0wXDKNDeQwb/view?usp=sharing" target="_blank" class="btn-download">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Descargar PDF
                 </a>
             </div>
@@ -71,11 +64,11 @@
             <h2 class="section-title">Sobre Mí</h2>
 
             <div class="about-flex-balance">
-                <img src="https://res.cloudinary.com/dq7uyauun/image/upload/v1717439642/Jesus_Gym_1.jpg" class="about-photo" alt="Jesús Castro">
+                <img src="https://res.cloudinary.com/dq7uyauun/image/upload/v1717439642/Jesus_Gym_1.jpg" class="about-photo" alt="Jesús Castro" />
 
                 <div class="about-bio">
-                    <p>Soy Jesús Castro, un apasionado del fitness con años de experiencia ayudando a transformar vidas...</p>
-                    
+                    <p>Soy Jesús Castro, un apasionado del fitness con experiencia ayudando a transformar vidas...</p>
+
                     <div class="about-details">
                         <div class="detail-card detail-card-full">
                             <h3>🎓 Estudios y Credenciales</h3>
@@ -99,7 +92,7 @@
             <p class="section-subtitle">Resultados reales de mis alumnos</p>
 
             <div class="testimonials-grid">
-                <!-- (los 6 testimonios como estaban originalmente) -->
+                <!-- Aquí puedes pegar tus 6 cards originales -->
             </div>
         </div>
     </section>
@@ -111,7 +104,16 @@
             <p class="section-subtitle">Completa el formulario</p>
 
             <form id="contactForm" class="contact-form">
-                <!-- Campos del formulario idénticos a tu versión -->
+                <input type="text" id="nombre" placeholder="Tu Nombre" required />
+                <input type="email" id="email" placeholder="Tu Correo" required />
+                <select id="objetivo" required>
+                    <option value="">Selecciona tu Objetivo</option>
+                    <option value="bajar">Bajar de Peso</option>
+                    <option value="subir">Subir Masa Muscular</option>
+                    <option value="tonificar">Tonificar</option>
+                </select>
+                <textarea id="mensaje" rows="5" placeholder="Cuéntame tus metas"></textarea>
+                <button type="submit" class="btn-primary">Enviar</button>
             </form>
 
             <div id="formMessage" class="form-message"></div>
@@ -130,9 +132,9 @@
                 <div class="footer-social">
                     <h4>Contáctame</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/jc_profemusc/" target="_blank" class="social-link">Instagram</a>
-                        <a href="https://bit.ly/49rjeZN" target="_blank" class="social-link">WhatsApp</a>
-                        <a href="mailto:jesuschuoprofe@gmail.com" class="social-link">Correo</a>
+                        <a href="https://www.instagram.com/jc_profemusc/" target="_blank">Instagram</a>
+                        <a href="https://bit.ly/49rjeZN" target="_blank">WhatsApp</a>
+                        <a href="mailto:jesuschuoprofe@gmail.com">Correo</a>
                     </div>
                 </div>
             </div>
