@@ -6,27 +6,29 @@
     gap: 2rem;
 }
 .about-photo {
-    max-width: 340px;
-    width: 100%;
+    flex: 1 1 340px;
+    max-width: 400px;
+    min-height: 100%;
     border-radius: 18px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.18);
     object-fit: cover;
-    flex: 0 0 320px;
-    height: auto;
-    align-self: stretch;
+    object-position: center;
 }
 .about-bio {
-    flex: 1 1 300px;
-    min-width: 220px;
+    flex: 1 1 500px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    gap: 2rem;
+}
+.about-bio p {
+    margin: 0;
+    line-height: 1.8;
 }
 .about-bio .about-details {
-    flex: 1 1 auto;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 @media (max-width: 900px) {
     .about-flex-balance {
@@ -133,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 .header {
-    background: var(--white);
+    background: #ffffff;
     box-shadow: var(--shadow);
     position: fixed;
     width: 100%;
@@ -339,6 +341,11 @@ body.dark-mode .nav-menu a {
     color: var(--text-color);
 }
 
+body.dark-mode .video-section,
+body.dark-mode .hero-video {
+    background: #0a0a0a;
+}
+
 body.dark-mode .logo h1 {
     color: var(--text-color);
 }
@@ -421,7 +428,7 @@ body.dark-mode .testimonial-text {
     align-items: center;
     gap: 0.5rem;
     padding: 15px 40px;
-    background: var(--white);
+    background: #ffffff;
     color: var(--primary-color);
     text-decoration: none;
     border-radius: 50px;
@@ -482,7 +489,7 @@ section {
 
 /* About Section */
 .about {
-    background: #fafafa;
+    background: #ffffff;
 }
 
 .about-content {
@@ -502,14 +509,15 @@ section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .detail-card {
-    background: var(--white);
+    background: #f9f9f9;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
     border-top: 4px solid var(--primary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-top 0.3s ease;
 }
@@ -529,7 +537,7 @@ section {
 .detail-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--secondary-color);
+    color: #000000;
     font-weight: 800;
 }
 
@@ -542,7 +550,8 @@ section {
     padding: 0.5rem 0;
     padding-left: 1.5rem;
     position: relative;
-    color: var(--text-color);
+    color: #1a1a1a;
+    font-size: 1rem;
 }
 
 .detail-card li::before {
@@ -556,13 +565,13 @@ section {
 
 /* Video Section */
 .video-section {
-    background: var(--white);
+    background: #ffffff;
 }
 
 /* Hero Video Section - First Section */
 .hero-video {
     padding: 100px 0 60px;
-    background: var(--white);
+    background: #ffffff;
 }
 
 .video-hero-content {
@@ -652,7 +661,7 @@ section {
 
 /* Testimonials Section */
 .testimonials {
-    background: #fafafa;
+    background: #ffffff;
 }
 
 .testimonials-grid {
@@ -663,10 +672,11 @@ section {
 }
 
 .testimonial-card {
-    background: var(--white);
+    background: #f9f9f9;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
     border-left: 4px solid var(--primary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-left 0.3s ease;
     display: flex;
@@ -722,7 +732,7 @@ section {
 
 /* Contact Form Section */
 .contact {
-    background: var(--white);
+    background: #ffffff;
 }
 
 .contact-form {
@@ -762,7 +772,7 @@ section {
     font-size: 1rem;
     font-family: inherit;
     transition: border-color 0.3s ease;
-    background: var(--white);
+    background: #ffffff;
 }
 
 .form-group input:focus,
