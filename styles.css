@@ -47,43 +47,7 @@
         min-width: 0;
     }
 }
-/* Dark mode for 'Sobre Mí' section: all text light */
-body.dark-mode .about,
-body.dark-mode .about *,
-body.dark-mode .about-text,
-body.dark-mode .about-details,
-body.dark-mode .about-details *,
-body.dark-mode .detail-card {
-    color: #f3f3f3 !important;
-}
-/* Dark mode for contact section and form */
-body.dark-mode .contact {
-    background: #111;
-}
-body.dark-mode .contact-form {
-    background: #181818;
-    color: #f3f3f3;
-    box-shadow: 0 8px 28px rgba(0,0,0,0.6);
-    border-top-color: var(--primary-color);
-}
-body.dark-mode .form-group label {
-    color: #f3f3f3;
-}
-body.dark-mode .form-group,
-body.dark-mode .form-group * {
-    color: #f3f3f3 !important;
-}
-body.dark-mode .form-group input,
-body.dark-mode .form-group select,
-body.dark-mode .form-group textarea {
-    background: #232323;
-    color: var(--white);
-    border: 2px solid #333;
-}
-body.dark-mode .form-group input::placeholder,
-body.dark-mode .form-group textarea::placeholder {
-    color: #aaa;
-}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -106,29 +70,12 @@ body.dark-mode .form-group textarea::placeholder {
     --shadow-hover: 0 15px 40px rgba(220, 38, 38, 0.3);
 }
 
-body.dark-mode {
-     --primary-color: #ef4444;
-     --secondary-color: #ffffff;
-     --text-color: #e5e5e5;
-     --text-light: #b3b3b3;
-     --white: #1f1f1f;
-     --gradient: linear-gradient(135deg, #1f1f1f 0%, #dc2626 100%);
-     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-     --shadow-hover: 0 15px 40px rgba(220, 38, 38, 0.5);
-}
-
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
+    color: #1a1a1a;
     overflow-x: hidden;
     background-color: #ffffff;
-}
-
-/* Explicit light mode styles - ensure white background */
-body:not(.dark-mode) {
-    background-color: #ffffff;
-    color: #1a1a1a;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -277,80 +224,8 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--primary-color);
 }
 
-/* Theme Toggle Button */
-.theme-toggle {
-    position: fixed;
-    left: 24px;
-    bottom: 24px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: var(--white);
-    color: var(--text-color);
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    cursor: pointer;
-    z-index: 1002; /* above return-to-top */
-    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
-}
-
-.theme-toggle:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
-}
-
-.theme-toggle svg {
-    width: 20px;
-    height: 20px;
-    stroke: var(--text-color);
-}
-
-.theme-toggle .moon-icon { display:none; opacity:0; }
-body.dark-mode .theme-toggle { background: #111; color: var(--text-color); }
-body.dark-mode .theme-toggle .moon-icon { display:block; opacity:1; }
-body.dark-mode .theme-toggle .sun-icon { display:none; opacity:0; }
-
-/* Ensure light mode background is pure white and text is dark for clarity */
-body { background-color: #ffffff; color: #111111; }
-header.header { background: #ffffff; }
-
-/* Light mode explicit overrides - ensure white backgrounds and dark readable text */
-body:not(.dark-mode) .about,
-body:not(.dark-mode) .testimonials,
-body:not(.dark-mode) .contact,
-body:not(.dark-mode) .video-section {
-    background-color: #ffffff;
-    color: #1a1a1a;
-}
-
-body:not(.dark-mode) .detail-card,
-body:not(.dark-mode) .testimonial-card {
-    background-color: #ffffff;
-    color: #1a1a1a;
-}
-
-body:not(.dark-mode) .detail-card h3,
-body:not(.dark-mode) .detail-card li,
-body:not(.dark-mode) .testimonial-text,
-body:not(.dark-mode) .testimonial-author h4 {
-    color: #1a1a1a;
-}
-
-body:not(.dark-mode) .section-title {
-    color: #000000;
-}
-
-body:not(.dark-mode) .section-subtitle,
-body:not(.dark-mode) .text-light {
-    color: #4a4a4a;
-}
-
-/* Hero Section (light by default) */
+/* Hero Section */
 .hero {
-    /* Light background: white with decorative SVG */
     background: #ffffff,
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23000000" fill-opacity="0.03" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
     background-size: cover, cover;
@@ -361,64 +236,6 @@ body:not(.dark-mode) .text-light {
     text-align: center;
     color: #111111;
     padding-top: 80px;
-}
-
-/* Dark hero when dark mode is active */
-body.dark-mode .hero {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(220, 38, 38, 0.9) 100%),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-    background-size: cover, cover;
-    color: var(--white);
-}
-
-/* Dark-mode overrides for header and content sections */
-body.dark-mode header.header {
-    background: #0a0a0a;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
-}
-
-body.dark-mode .nav-menu a {
-    color: var(--text-color);
-}
-
-body.dark-mode .video-section,
-body.dark-mode .hero-video {
-    background: #0a0a0a;
-}
-
-body.dark-mode .logo h1 {
-    color: var(--text-color);
-}
-
-/* Make 'About' and 'Testimonials' sections dark in dark mode */
-body.dark-mode .about,
-body.dark-mode .testimonials {
-    background: var(--white); /* var(--white) is dark in dark-mode */
-}
-
-body.dark-mode .detail-card,
-body.dark-mode .testimonial-card {
-    background: #0f0f0f;
-    color: var(--text-color);
-    box-shadow: 0 8px 28px rgba(0,0,0,0.6);
-    border-top-color: var(--primary-color);
-    border-left-color: var(--primary-color);
-}
-
-body.dark-mode .detail-card h3,
-body.dark-mode .testimonial-author h4,
-body.dark-mode .testimonial-card .author-info h4 {
-    color: var(--white);
-}
-
-body.dark-mode .section-subtitle {
-    color: var(--text-light);
-}
-
-body.dark-mode .about .intro-text,
-body.dark-mode .detail-card li,
-body.dark-mode .testimonial-text {
-    color: var(--text-light);
 }
 
 .hero-content {
