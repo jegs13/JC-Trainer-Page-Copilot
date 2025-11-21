@@ -23,14 +23,13 @@ Los textos, imágenes, videos y la marca **Jesús Castro Trainer** son propiedad
 ## Características
 
 - ✅ Sección Hero con llamada a la acción
-- ✅ Sección "Sobre Mí" con estudios, credenciales, experiencia, logros y técnicas de entrenamiento
+- ✅ Sección "Sobre Mí" con estudios, credenciales, experiencia y logros
 - ✅ Video educativo integrado
 - ✅ Sección de testimonios de alumnos
 - ✅ Formulario de contacto completo con todos los campos solicitados
 - ✅ Diseño completamente responsive
 - ✅ Animaciones suaves y efectos visuales
 - ✅ Navegación fluida entre secciones
-- ✅ Modo oscuro/claro (Dark/Light Mode)
 - ✅ Todo en español
 
 ## Estructura de Archivos
